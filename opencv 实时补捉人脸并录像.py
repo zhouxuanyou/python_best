@@ -20,7 +20,7 @@ while count > -1:
         for faceRect in faceRects:
             x, y, w, h = faceRect
             cv2.rectangle(img, (int(x), int(y)), (int(x) + int(w), int(y) + int(h)), (0, 255, 0), 2, 0)
-    video.write(img)
+    # video.write(img)
     cv2.imshow('video', img)
     key = cv2.waitKey(1)
     if key == ord('q'):
